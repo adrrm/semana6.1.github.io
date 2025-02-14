@@ -15,21 +15,24 @@
             document.getElementById('resultado').innerHTML="Resultado de la resta:"+resultado;
         }
     </script>
+    <div id="resultado2"></div>
     <button onclick="javascript:text();">
         RESULTADO
     </button>
     <script>
         function text(){
-            <style>
-                border-width:2px solid;
-            </style>
+            document.getElementById('resultado2').innerHTML="<p style='border-style:solid;'>Esto es un cuadro</p>";
         }
         text(RESULTADO);
     </script>
-    <button onclick="javascript:image;">IMAGEN
+    <div id="IMAGEN"></div>
+    <button onclick="javascript:image()">IMAGEN
     </button>
     <script>
-        document.getElementById('IMAGEN').innerHTML="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkACIsDIw66yGylEXIxYCv8IT0xWU_0MisExqlzxjzlI60C4gwDfFdv_Q&s';>"
+        function image(){
+             document.getElementById('IMAGEN').innerHTML="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkACIsDIw66yGylEXIxYCv8IT0xWU_0MisExqlzxjzlI60C4gwDfFdv_Q&s'/>";
+   
+        }
     </script>
 </body>
 </html>
