@@ -1,45 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-</head>
+<html>
 <body>
-    
-    <div id="IMAGEN"></div>
-    <div id="IMAGEN2"></div>
-    <button onclick="javascript:image()">IMAGEN
-    </button>
     <script>
-        function image(){
-             document.getElementById('IMAGEN').innerHTML="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkACIsDIw66yGylEXIxYCv8IT0xWU_0MisExqlzxjzlI60C4gwDfFdv_Q&s'/>"
-             document.getElementById('IMAGEN2').innerHTML="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScPVtz5B1h1M3bnj6hIXmRSjUI_BgmB1WsNfSzaoIpj9Fk2y5ltMTXFSE&s'/>"
-        }
+        document.write((20 != "20")+"<br>");
+        document.write((10 !== "10")+"<br>");
+        document.write((50 < 30)+"<br>");
+        document.write((40 > 80)+"<br>");
+        document.write((60 <= 60)+"<br>");
+        document.write((80 >= 90)+"<br>");
+
     </script>
-
-
-    <div id="resultado"></div>
-    <button onclick="javascript: division(60,30);">DIVISION</button>
-    <script>
-        function division(valor1,valor2){
-          var resultado= valor1/valor2;
-          document.getElementById('resultado').innerHTML="Resultado de la division:"+resultado;
-            }
-    </script>
-        
-
-    <div id="resultado2"></div>
-    <button onclick="javascript:text();">
-            EMOJI
-    </button>
-    <script>
-            function text(){
-                document.getElementById('resultado2').innerHTML="<p>❤</p>";
-            }
-            text(RESULTADO);
-    </script>
-
 </body>
 </html>
